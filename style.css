@@ -1,0 +1,11 @@
+/*
+Theme Name:     WP Plugin Codes
+Theme URI:      http://www.wordpress.org/
+Description:    Twenty Sixteen Child Theme
+Author:         Anisuzzaman Khan
+Author URI:     http://aniskhan001.me
+Template: 		twentysixteen
+Version:        0.1
+*/
+
+@import url("../twentysixteen/style.css");
