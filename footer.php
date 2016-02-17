@@ -49,7 +49,7 @@
 				?>
 				<span class="site-title">&copy; 2016 - All contents copyrights</span>
 				<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentysixteen' ) ); ?>"><?php printf( __( 'Powered by %s', 'twentysixteen' ), 'WordPress' ); ?></a>
+				<span><?php printf( __( 'Powered by %s', 'twentysixteen' ), 'WordPress' ); ?></span>
 			</div><!-- .site-info -->
 		</footer><!-- .site-footer -->
 	</div><!-- .site-inner -->

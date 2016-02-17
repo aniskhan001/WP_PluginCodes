@@ -10,9 +10,15 @@ Version:        0.1
 
 @import url("../twentysixteen/style.css");
 
+/* Logo styles */
 .site-header-main .logo {
 	padding-left: 160px;
 	background: url(imgs/logo.jpg) no-repeat top left;
 	background-size: 150px;
 	height: 115px;
+}
+
+/* Bulleted list margin adjustment */
+.entry-content ul, .entry-summary ul, .comment-content ul, .entry-content ol, .entry-summary ol, .comment-content ol {
+	margin-left: 30px;
 }
