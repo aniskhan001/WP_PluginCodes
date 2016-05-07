@@ -18,6 +18,7 @@
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
+	<meta property="fb:pages" content="939779579462754" />
 	<?php wp_head(); ?>
 </head>
 
