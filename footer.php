@@ -47,7 +47,7 @@
 					 */
 					do_action( 'twentysixteen_credits' );
 				?>
-				<span class="site-title">&copy; 2016 - All contents copyrights</span>
+				<span class="site-title">&copy; <?php echo date("Y"); ?> - All contents copyrights</span>
 				<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
 				<span><?php printf( __( 'Powered by %s', 'twentysixteen' ), 'WordPress' ); ?></span>
 			</div><!-- .site-info -->

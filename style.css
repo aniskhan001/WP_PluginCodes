@@ -10,10 +10,36 @@ Version:        0.1
 
 @import url("../twentysixteen/style.css");
 
+/* Animations */
+@keyframes colorAnimation {
+	0% {color: #ff00c3}
+	33% {color: #1997e5}
+	67% {color: #8700ff}
+	100% {color: #ff00c3}
+}
+
+@keyframes bgAnimation { 
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+
+/* Body */
+body.custom-background {
+	background: linear-gradient(270deg, #ff00c3, #1997e5, #8700ff);
+	background-size: 600% 600%;
+	animation: bgAnimation 30s ease infinite;
+}
+
+.site {
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow: 0 0 10px #fff, 0 0 40px #fff;
+}
+
 /* Logo styles */
 .site-header-main .logo {
 	padding-left: 160px;
-	background: url(imgs/logo.jpg) no-repeat top left;
+	background: url(imgs/logo.png) no-repeat top left;
 	background-size: 150px;
 	height: 115px;
 }
@@ -21,4 +47,25 @@ Version:        0.1
 /* Bulleted list margin adjustment */
 .entry-content ul, .entry-summary ul, .comment-content ul, .entry-content ol, .entry-summary ol, .comment-content ol {
 	margin-left: 30px;
+}
+
+/* Input and Interaction */
+pre, code {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+input, textarea {
+	background: rgba(255, 255, 255, 0.3);
+	transition: 0.3s all ease;
+}
+
+input:focus, textarea:focus {
+	background: rgba(255, 255, 255, 0.6);
+	box-shadow: 0 0 1px #8700ff, 0 0 20px #e0bdff;
+}
+
+/* Menu */
+
+.main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a {
+	animation: colorAnimation 10s ease infinite;
 }
